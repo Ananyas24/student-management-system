@@ -1,0 +1,23 @@
+2026-04-06 11:10:12.555 +05:30 [INF] User profile is available. Using 'C:\Users\SrivastavaAnanya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-06 11:10:12.710 +05:30 [INF] Now listening on: http://localhost:5076
+2026-04-06 11:10:12.716 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-06 11:10:12.718 +05:30 [INF] Hosting environment: Development
+2026-04-06 11:10:12.721 +05:30 [INF] Content root path: C:\Users\SrivastavaAnanya\StudentManagementAPI
+2026-04-06 11:10:51.013 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5076/api/students/3 - application/json 104
+2026-04-06 11:10:51.547 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-04-06 11:10:51.555 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-04-06 11:10:51.600 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5076/api/students/3 - 405 0 null 592.4644ms
+2026-04-06 11:11:09.898 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5076/api/students - application/json 104
+2026-04-06 11:11:09.942 +05:30 [INF] Executing endpoint 'StudentManagementAPI.Controllers.StudentController.Create (StudentManagementAPI)'
+2026-04-06 11:11:10.083 +05:30 [INF] Route matched with {action = "Create", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(StudentManagementAPI.Models.Student) on controller StudentManagementAPI.Controllers.StudentController (StudentManagementAPI).
+2026-04-06 11:11:13.850 +05:30 [INF] Executed DbCommand (297ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([Age], [Course], [CreatedDate], [Email], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-04-06 11:11:14.091 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StudentManagementAPI.Models.Student, StudentManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 11:11:14.143 +05:30 [INF] Executed action StudentManagementAPI.Controllers.StudentController.Create (StudentManagementAPI) in 4033.6268ms
+2026-04-06 11:11:14.153 +05:30 [INF] Executed endpoint 'StudentManagementAPI.Controllers.StudentController.Create (StudentManagementAPI)'
+2026-04-06 11:11:14.202 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5076/api/students - 200 null application/json; charset=utf-8 4303.4807ms
+2026-04-06 11:36:47.178 +05:30 [INF] Application is shutting down...
